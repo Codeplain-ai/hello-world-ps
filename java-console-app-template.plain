@@ -1,0 +1,28 @@
+***definitions***
+
+- :App: is a console application.
+
+- :Unittests: are the unit tests of :App: and are part of :Implementation:.
+
+- :MainExecutableFile: is the main executable code file of :App:.
+
+
+***implementation reqs***
+
+- :Implementation: should be in Java 21.
+
+- :Implementation: should include unit tests using Java's built-in testing package and should be put in `src/test/java` folder.
+
+- The pom.xml maven-jar-plugin (for the manifest) and the maven-shade-plugin (to bundle all dependencies into a single runnable JAR) should be used to build the project.
+
+***test reqs***
+
+- :ConformanceTests: of the :App: should be implemented in Java and will be built and tested with Maven.
+
+- :ConformanceTests: should contain their own pom.xml at the root of the :ConformanceTests: folder (<CONFORMANCE_TESTS_FOLDER>).
+
+- :ConformanceTests: will be executed using the "mvn test" command and therefore pom.xml has to include all test files available in the project.
+
+- The current working directory contains :MainExecutableFile:.
+
+- :App: can be executed using the command "java -jar :MainExecutableFile:".

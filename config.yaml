@@ -1,0 +1,6 @@
+unittests-script: ./test_scripts/run_unittests_java.ps1
+prepare-environment-script: ./test_scripts/prepare_environment_java.ps1
+conformance-tests-script: ./test_scripts/run_conformance_tests_java.ps1
+copy-build: true
+build-dest: build
+verbose: true  # verbose flag, defaults to false if not set
